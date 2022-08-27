@@ -1,0 +1,31 @@
+title Notes
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: Html code notes.html
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: css code main.css
+Browser->Server: HTTP https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: js code main.js
+
+note over Browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/main.js
+
+note over Browser
+
+Click submit buttom
+end note
+
+note over Browser:
+browser starts executing js-code
+that send form info
+end note
+
+note over Server:
+New note
+end note
+
+Server->Browser: Html code notes with a new note
